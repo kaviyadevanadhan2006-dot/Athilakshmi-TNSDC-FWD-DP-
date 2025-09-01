@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cybersecurity Analyst Portfolio</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #0d1117;
+      color: #e6edf3;
+    }
+    header {
+      background: #161b22;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid #30363d;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #58a6ff;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #8b949e;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+    }
+    h2 {
+      color: #58a6ff;
+      margin-bottom: 20px;
+    }
+    .skills, .projects {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #30363d;
+      transition: 0.3s;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+      border-color: #58a6ff;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #161b22;
+      border-top: 2px solid #30363d;
+    }
+    a {
+      color: #58a6ff;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    button {
+      background: #58a6ff;
+      border: none;
+      padding: 10px 20px;
+      color: #0d1117;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #1f6feb;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Athilakshmi</h1>
+    <p>Hello ,Welcome to Cybersecurity Analyst</p>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hii I am Athilakshmi, I will create it with a cybersecurity analyst. I have created the coding for the portfolio. I am preparing for naan mudhalvan class. It's based on HDML, CSS, JavaScript for students.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">🏬 HTML</div>
+      <div class="card">📁 CSS</div>
+      <div class="card">🧠 Fullstack Tools</div>
+      <div class="card">🔒 JavaScript</div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3> HTML STATISTICS </h3>
+        <p>Different tags to View charts and metrics.</p>
+      </div>
+      <div class="card">
+        <h3>CSS FILES </h3>
+        <p>Style your files.</p>
+      </div>
+      <div class="card">
+        <h3>JAVASCRIPT SECURITY </h3>
+        <p>Manage access and roles.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Athilakshmi</h2>
+    <p>Email: <a href="mailto:"kaviyadevanadhan2006@gmail.com">kaviyadevanadhan2006@gmail.com</a></p>
+    <p>LinkedIn: <a href="#">https://www.linkedin.com/in/d-athilakshmi</a></p>
+    <p>Phone: <a href="#">8438885179</a></p>
+  </section>
+
+<!-- Contact Section -->
+  <section id="contact" class="section contact">
+    <h2>Contact Me</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+    <div>
+     <button onclick="massage ()">Send</>
+    </div>
+    <p>Click the button down to sendalert message:</p>
+    <button onclick="showAlert()">Click!</button>
+
+    <script>
+         function showAlert() {
+              alert("Hello, this is your alert message!");
+}
+    </script>
+    </form>
+  </section>
+
+  <footer>
+    <p>© 2025 Cybersecurity Analyst Portfolio</p>
+  </footer>
+
+  <script>
+    function checkPassword() {
+      let password = prompt("Enter a password to test:");
+      if (!password) return;
+      
+      let strength = "Weak ❌";
+      if (password.length > 8 && /[A-Z]/.test(password) && /\d/.test(password) && /[@$!%*?&]/.test(password)) {
+        strength = "Strong ✅";
+      } else if (password.length >= 6) {
+        strength = "Medium ⚠️";
+      }
+      alert("Password Strength: " + strength);
+    }
+  </script>
+</body>
+</html>
